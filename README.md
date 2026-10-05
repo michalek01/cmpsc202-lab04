@@ -9,30 +9,33 @@ This lab reviews the foundational concepts of algorithms and data structures tha
 ## Asymptotic Analysis
 
 1. Use the rules from lecture 07 to prove that $T(n) = 5 \log n + 7n$ is $\mathcal{O}(n)$.
+Dropping multicative constants
+Log vs polynomial
+summing is a max rule
 
 2. True/False/Possibly: $T(n)$ is $\mathcal{O}(n^2)$?
 
 **Answer**: Yes
 
-**Justification**:
+**Justification**: Yes, sine T(n) = O(n) and n= (n^2), by transitivity, T(n)= O(n^2)
 
 3. True/False/Possibly: $T(n)$ is $\Omega(n \log n)$?
 
 **Answer**: No
 
-**Justification**:
+**Justification**: No, since N log n grows faster than our upper bound T(n) = n
 
 4. For any algorithm, we can give a trivial lower bound. What is that lower bound?
 
 **Answer**: $\Omega(1)$
 
-**Justification**:
+**Justification**: This means that the algorithm took atleast 1 step and all algorithms take atleast  one step if they run
 
 5. Is there a corresponding trivial upper bound? Why or why not?
 
 **Answer**: No
 
-**Justification**:
+**Justification**: No, there is not a upper bound than can be true for all algorithms. Running times can grow very fast and there could be a algorithm thats has an infinite running time or a very large number.
 
 
 ## Data Structures
@@ -41,7 +44,7 @@ This lab reviews the foundational concepts of algorithms and data structures tha
 
 **Answer**: Stack
 
-**Justification**:
+**Justification**: 
 
 2. A server receives a massive influx of data packets from a streaming video application. To prevent the video from skipping or playing out of order on the user's end, the server must process and forward these packets in the exact sequence they were received.
 
