@@ -44,25 +44,25 @@ summing is a max rule
 
 **Answer**: Stack
 
-**Justification**: 
+**Justification**: This is LIFo Because the robot returns the most recently visited intersection when it hits a dead end. So the last intersection that the robot will reach will be the first one out.
 
 2. A server receives a massive influx of data packets from a streaming video application. To prevent the video from skipping or playing out of order on the user's end, the server must process and forward these packets in the exact sequence they were received.
 
 **Answer**: Queue
 
-**Justification**:
+**Justification**: The server is processing the first data packet that was recieve and then will process them in order till the last recieve data packet. This is Queue.
 
 3. An atmospheric monitoring system reads temperature data from 10,000 sequentially numbered sensors (IDs 0 through 9999). Throughout the day, the system needs to constantly update and read the current temperature of randomly selected sensors based on their ID number to build localized weather maps.
 
 **Answer**: Array
 
-**Justification**:
+**Justification**:This is an array because the system has numerical numbered sensors and randomly checks each temperature. 
 
 4. You are building a lightweight syntax checker for a code editor. Its sole job is to scan a document and ensure that every opened parenthesis `(`, bracket `[`, and brace `{` is matched with its corresponding closing character in the correct nested order.
 
 **Answer**: Stack
 
-**Justification**:
+**Justification**:This stack checks if the opening symbols are matched in reverse order. The last or most recent symbol must be closed first
 
 ## Empirical Comparison of Algorithms
 
